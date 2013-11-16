@@ -1,0 +1,49 @@
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{cite}
+\usepackage{color}
+\usepackage[automark]{scrpage2}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{floatflt}
+\usepackage{graphicx} 
+\usepackage{nomencl}
+
+\definecolor{LinkColor}{rgb}{0,0,0}
+
+\hypersetup{colorlinks=true, linkcolor=LinkColor, citecolor=LinkColor,
+filecolor=LinkColor, menucolor=LinkColor, urlcolor=LinkColor}
+
+\definecolor{darkviolet}{rgb}{0.5,0,0.4}
+\definecolor{darkgreen}{rgb}{0,0.4,0.2} 
+\definecolor{darkblue}{rgb}{0.1,0.1,0.9}
+\definecolor{darkgrey}{rgb}{0.5,0.5,0.5}
+\definecolor{lightblue}{rgb}{0.4,0.4,1}
+
+\lstset{
+	captionpos=b, 
+	tabsize=4, 
+	basicstyle=\ttfamily,
+	aboveskip={1.5\baselineskip}, 
+	columns=fixed, 
+	showstringspaces=false;
+	extendedchars=true, 
+	breaklines=true, 
+	frame=single, 
+	showtabs=false,
+	showspaces=false, 
+	showstringspaces=false, 
+	keywordstyle=\color{darkviolet}\bfseries,
+	commentstyle=\color{darkgreen},
+	stringstyle=\color{darkblue},
+	numberstyle=\color{darkgrey}\lstfontfamily,
+	emphstyle=\color{red}\bfseries,
+	morecomment=[s][\color{lightblue}]{/**}{*/},
+	language=java}
+  
+\renewcommand{\lstlistlistingname}{Listingverzeichnis}
+
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\makenomenclature
